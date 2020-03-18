@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_create_profile.*
 
 const val GALLERY_REQUEST_CODE = 100
 
+
 class CreateProfileActivity : AppCompatActivity() {
 
     private var profileImageUri: Uri? = null
@@ -52,9 +53,9 @@ class CreateProfileActivity : AppCompatActivity() {
 
     private fun onConfirmClick() {
         val profile = Profile(
-            first_name.toString(),
-            last_name.toString(),
-            description.toString(),
+            etFirstName.text.toString(),
+            etLastName.text.toString(),
+            etDescription.text.toString(),
             profileImageUri
         )
 
@@ -62,8 +63,4 @@ class CreateProfileActivity : AppCompatActivity() {
         profileActivityIntent.putExtra(ProfileActivity.PROFILE_EXTRA, profile)
         startActivity(profileActivityIntent)
     }
-
-
-
-
 }

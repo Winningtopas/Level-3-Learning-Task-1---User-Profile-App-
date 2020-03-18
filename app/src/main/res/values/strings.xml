@@ -6,4 +6,8 @@
     <string name="confirm">Confirm</string>
     <string name="open_picture_gallery">Picture Gallery</string>
     <string name="profile_image">profile_image</string>
+    <string name="profile_title">profile_title</string>
+    <string name="profile_text">profile_text</string>
+    <string name="name">%1$s %2$s</string>
 </resources>
+
